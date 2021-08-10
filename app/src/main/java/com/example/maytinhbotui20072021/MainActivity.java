@@ -4,50 +4,30 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    // Khai báo biến
+    EditText mEdtNumber1,mEdtNumber2;
+    TextView mTvResult;
+    Button mBtnPlus, mBtnMinus , mBtnDivide , mBtnMultiplication;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    /*
-            int a = 5;
-            String b = "10";
-
-            Kiểm tra giá trị truyền vào
-            ctrl + p :xem tham số truyền vào
-
-            Log.d("BBB", a - b);
-
-        Math
-            Làm tròn 0.5
-
-                int value = Math.round(5.5f);
-                Log.d("BBB", "Làm tròn 0.5 = " + value);
-
-            Làm tròn lên
-
-                double value1 = Math.ceil(1.000001);
-                Log.d("BBB","Làm tròn lên " + value1);
-
-            Làm tròn xuống
-
-                 double value2 = Math.floor(1.999999);
-                 Log.d("BBB","Làm tròn xuống " + value2);
-
-            Random
-
-                double value3 = Math.random() * 5;
-                Log.d("BBB","Số ngẫu nhiên " + value3);
-
-            Trị tuyệt đối
-
-                 int value4 = Math.abs(-5);
-                 Log.d("BBB","Trị tuyệt đối " + value4);
-    */
-
+        // Ánh xạ
+        mEdtNumber1 = findViewById(R.id.editTextNumber1);
+        mEdtNumber2 = findViewById(R.id.editTextNumber2);
+        mTvResult = findViewById(R.id.textViewResult);
+        mBtnMinus = findViewById(R.id.buttonMinus);
+        mBtnPlus = findViewById(R.id.buttonPlus);
+        mBtnDivide = findViewById(R.id.buttonDivide);
+        mBtnMultiplication = findViewById(R.id.buttonMultiplication);
 
 
     }
